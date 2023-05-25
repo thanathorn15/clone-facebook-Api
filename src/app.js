@@ -9,7 +9,7 @@ const rateLimit = require('express-rate-limit')
 
 const app = express()
 
-if (process.env.NODE_ENV === 'develop') {
+if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'))
 }
 
